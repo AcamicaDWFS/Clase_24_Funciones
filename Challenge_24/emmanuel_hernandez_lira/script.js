@@ -1,17 +1,12 @@
 const getAverage = (array) => {
-  let sum = 0;
-  let numCounter = 0;
+  const numbers = array.filter((element) => typeof element === "number");
+  const sum = numbers.reduce((acc, currVal) => acc + currVal);
 
-  for (let element of array) {
-    if (typeof element === "number") {
-      sum += element;
-      numCounter++;
-    }
-  }
-
-  return sum / numCounter;
+  return sum / numbers.length;
 };
 
 let myArray = [1, 2, 3, "a", 4, "s", 5, 6, 7, 8, true, 9, 10];
 
-alert(`El promedio de los elementos numéricos es: ${getAverage(myArray)}`);
+console.log(
+  `El promedio de los elementos numéricos es: ${getAverage(myArray)}`
+);
