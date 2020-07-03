@@ -30,8 +30,9 @@ Recibe su nombre de usuario y busca si existe.
 - Si existe, solicita todos los datos a través del prompt y reemplaza el objeto con la nueva información.
 
 ## Ejercicio 2
-Traducir a código javascript el diagrama de flujo:
+Traducir a código javascript el diagrama de flujo siguiente:
 
+![FlowDiagram](https://lh6.googleusercontent.com/UgQjBTasgU1owUGGrwtmiUEpuFrF-IVpZ7Da2I9tf4leC-obKxeOaDRsak7pyn84pN---Zk4tk2byTMVGUbwoeWGYjzq2MnZ7I2DyDG7)
 
 ## Ejercicio 3
 Solicita al usuario el valor del radio de un círculo y calcula su diámetro.
