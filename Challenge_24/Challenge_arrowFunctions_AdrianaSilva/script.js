@@ -16,4 +16,4 @@ let promedio = (arregloNumeros) => {
     return console.log(suma/i);
 }
 
-promedio(arregloNumeros);
+promedio(arregloNumeros); 
