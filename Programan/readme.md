@@ -36,4 +36,5 @@ Traducir a código javascript el diagrama de flujo siguiente:
 
 ## Ejercicio 3
 Solicita al usuario el valor del radio de un círculo y calcula su diámetro.
+
 Almacenar el valor de PI en una constante
