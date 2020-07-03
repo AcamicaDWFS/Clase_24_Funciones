@@ -1,0 +1,38 @@
+button {
+    background-color: lightgreen;
+    border-radius: 20px;
+    box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.75);
+    font-size: 4rem;
+    margin: 2vw;
+    width: 90vw;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+}
+
+table {
+    border-collapse: separate;
+    margin: auto;
+    width: 90vw;
+}
+
+tr {
+    margin: 5vw;
+}
+
+tr,
+th,
+td {
+    border: solid 1px black;
+}
+
+td {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
