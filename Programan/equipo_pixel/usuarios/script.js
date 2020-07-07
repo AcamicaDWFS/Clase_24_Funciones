@@ -65,23 +65,26 @@ function login() {
     (currentUser) => currentUser.getUsername() === inputUser
   );
 
-  if (result.length === 0) {
-    alert("El usuario no existe.");
-    return;
-  } else {
-    const loginUser = result[0];
-    if (!loginUser.active) {
-      alert("Usuario inactivo.");
-      return;
-    } else {
-      const { username, password } = loginUser;
-
-      if (inputUser === username && inputPassword === password) {
-        alert("Haz iniciado sesión.");
-      } else {
-        alert("Datos incorrectos.");
-      }
+  try {
+    if (result.length === 0) {
+      throw new Error("El usuario ingresado no existe.");
     }
+
+    const [loginUser] = result;
+
+    if (!loginUser.active) {
+      throw new Error("Usuario inactivo.");
+    }
+
+    const { username, password } = loginUser;
+
+    if (inputUser === username && inputPassword === password) {
+      alert("Haz iniciado sesión.");
+    } else {
+      throw new Error("Datos incorrectos. Intenta de nuevo.");
+    }
+  } catch (error) {
+    alert(error);
   }
 }
 
@@ -217,7 +220,6 @@ users.push(
 // Mensajes de advertencia.
 const warningMsg = "Sólo se aceptan carácteres numéricos.";
 const invalidInputMsg = "La opción elegida no existe.";
-const invalidUser = "Este usuario ya existe. Escribe uno diferente.";
 
 // Inicio del programa.
 showMenu();
