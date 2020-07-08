@@ -2,17 +2,9 @@ function start() {
   let number = getInput();
 
   if (number > 10) {
-    if (getInput() > 100) {
-      console.log("A");
-    } else {
-      console.log("B");
-    }
+    getInput() > 100 ? console.log("A") : console.log("B");
   } else {
-    if (getInput() > 1000) {
-      console.log("C");
-    } else {
-      console.log("D");
-    }
+    getInput() > 1000 ? console.log("C") : console.log("D");
   }
 
   console.log(number);
